@@ -1,4 +1,5 @@
-import {TILE_TYPE_ENUM} from "../scripts/Enums/enums";
+import {ITile,ILevel} from "db://assets/levels/alllevels"
+import {TILE_TYPE_ENUM} from "db://assets/scripts/Enums/enums"
 
 const mapInfo = [
     [
@@ -423,12 +424,7 @@ const mapInfo = [
     ],
   ];
 
-export interface ITile{
-    src:number | null,
-    type:TILE_TYPE_ENUM | null
-}
-
-const level = {
+const level:ILevel = {
     mapInfo
 };
 
